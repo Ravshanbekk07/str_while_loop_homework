@@ -7,15 +7,14 @@ def main(s):
         int: return answer
     """
     i = 0
-    m = 0
-    while i<len(s):
-        if not s[i] =='o' and not s[i] =='e':
-           if not s[i] =='u' and not s[i] =='a':
-            if not s[i] =='i' and not s[i] =='y':
-              m+=1
-        
+    r= 0
+    while i <len(s):
+        if s[i].islower():
+            r +=1
+            
         i+=1
-    return m
+        
+    return r
 
-v = main("aaaaad")
+v= main("CodeschoolUz")
 print(v)
