@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+    odds = 0
+    while i<len(s):
+        if int(s[i])%2 !=0:
+            odds+=1
+        i+=1
+    return odds
+
+v = main("3489769")
+print(v)
