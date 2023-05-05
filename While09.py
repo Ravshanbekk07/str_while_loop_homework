@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+    sum = 0
+    while i<len(s):
+        sum+=int(s[i])
+        i+=1
+    return sum
+
+v = main("12")
+print(v)
