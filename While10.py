@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+   
+    sum_of_odds  = 0
+    while i<len(s):
+        if int(s[i])%2 !=0:
+            
+             sum_of_odds+=int(s[i])
+        i+=1
+    return sum_of_odds
+
+v = main("98421")
+print(v)
